@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./fontawesome/js/all.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Cash Register Manager</h1>
+      <p>
+        Enter The Bill Amount and Cash Given by the Customer and know minimum
+        number of notes to return
+      </p>
+
+      <label for="billAmount">Bill Amount:</label>
+      <input type="number" id="billAmount" name="BillAmount" />
+
+      <label for="cashGiven">Cash Given:</label>
+      <input type="number" id="cashGiven" name="cashGiven" />
+
+      <div id="errorMessage"></div>
+
+      <button type="button" id="button">Check</button>
+      <p style="font-size: large">Return Change</p>
+
+      <table class="table-view">
+        <tr>
+          <th>No of Notes to Return</th>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+          <td class="noOfNotes"></td>
+        </tr>
+        <tr>
+          <th>Note</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>200</td>
+          <td>100</td>
+          <td>50</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <p>&#169;|2022|Ganesh</p>
+      <i class="fa-brands fa-linkedin fa-2x"></i>
+      <i class="fa-brands fa-twitter fa-2x"></i>
+      <i class="fa-brands fa-github fa-2x"></i>
+      <i class="fa-brands fa-discord fa-2x"></i>
+    </footer>
+    <script src="./App.js"></script>
+  </body>
+</html>
