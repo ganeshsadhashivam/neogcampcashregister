@@ -19,14 +19,15 @@ check.addEventListener("click",function clickEventListener(){
  
 
     hideErrorMessage();
-  
-    if(totalBillAmount.value > 0 ) //|| cashGiven.value > totalBillAmount.value)
+   
+    if(Number(totalBillAmount.value) > 0 ) 
     {
         
-        if(cashGiven.value >= totalBillAmount.value)
+        if(Number(cashGiven.value) >= Number(totalBillAmount.value))
         {
       
         var remainingToGive = cashGiven.value-totalBillAmount.value;
+       
                 amountToReturn(remainingToGive);
         }
         else{
