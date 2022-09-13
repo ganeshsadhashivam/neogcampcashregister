@@ -33,7 +33,7 @@ input{
 }
 button{
     display:block;
-    margin:1rem 41rem;
+    margin:1rem auto;
     padding:0.5rem 1rem;
     align-content: center;
     background-color: var(--primarycolor);
@@ -47,9 +47,9 @@ button{
 }
 
 .table-view{
-    margin:2rem 18rem;
+    margin:2rem auto;
     
-    width:50rem;
+    width:100%;
 }
 
 table ,th,td{
