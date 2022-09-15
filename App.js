@@ -50,7 +50,7 @@ check.addEventListener("click",function clickEventListener(){
     }
     else{
         
-        showErrorMessage("The bill Amount should be positive") ;
+        showErrorMessage("The bill Amount should be positive or should not me empty") ;
     }
 });
 
