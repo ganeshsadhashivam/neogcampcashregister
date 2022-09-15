@@ -2,6 +2,7 @@
 
 body{
 
+    
 }
 
 :root{
@@ -10,6 +11,8 @@ body{
 
 .container{
 
+    background-color: lightskyblue;
+    border:2px solid black;
     margin:0rem 2rem;
     padding:2rem;
     text-align: center;
@@ -28,6 +31,8 @@ label{
 
 input{
     border: 1px solid var(--primarycolor);
+    padding: 1rem;
+
 
     
 }
@@ -43,7 +48,9 @@ button{
 }
 
 #errorMessage{
+    font-size: x-large;
     margin:2rem;
+    color:white;
 }
 
 .table-view{

@@ -27,8 +27,19 @@ check.addEventListener("click",function clickEventListener(){
         {
       
         var remainingToGive = cashGiven.value-totalBillAmount.value;
-       
-                amountToReturn(remainingToGive);
+
+                if(remainingToGive === 0)
+                {
+                    var msg = "Thank You visit again... "
+                   amountToReturn(msg);
+
+                }
+                else{
+                    var msg = "we have to return Rs = "+ remainingToGive;
+                    amountToReturn(msg);
+
+                }
+               
         }
         else{
 
@@ -64,7 +75,9 @@ function hideErrorMessage(Message){
 //calculation
 function amountToReturn(remainingToGive)
 {
-    showErrorMessage(remainingToGive);
+    
+   
+   showErrorMessage(remainingToGive);
     var notesReturned;
     for(let i=0;i<amount.length;i++)
     {
