@@ -28,17 +28,21 @@ check.addEventListener("click",function clickEventListener(){
       
         var remainingToGive = cashGiven.value-totalBillAmount.value;
 
-                if(remainingToGive === 0)
-                {
-                    var msg = "Thank You visit again... "
-                   amountToReturn(msg);
 
-                }
-                else{
-                    var msg = "we have to return Rs = "+ remainingToGive;
-                    amountToReturn(msg);
+                amountToReturn(remainingToGive);
 
-                }
+                // if(remainingToGive === 0)
+                // {
+                //     var msg = "Thank You visit again... "
+                //    amountToReturn(msg);
+
+                // }
+                // else{
+                //     var msg =  remainingToGive +"we have to return Rs =" ;
+                //     showErrorMessage(msg);
+                //     amountToReturn(remainingToGive);
+
+                // }
                
         }
         else{
